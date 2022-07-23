@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --biru-cerah: #9de9f4;
+  --putih: #fff;
+  --hitam: #000000;
+  --abu-abu: #f0efef;
+  --abu-keputihan: rgb(240, 238, 238);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-image: url(img/bg1.png);
+}
+
+.container-fluid {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+
+.form-input-regis {
+  width: 30em;
+  background-color: var(--putih);
+  border-radius: 12px;
+  box-shadow: 15px 15px 20px #00000020;
+}
+
+.form-input-regis .modal-body form input {
+  margin-bottom: 1.2em;
+  border: 1.2px solid var(--biru-cerah);
+}
+
+.form-input-regis .modal-body button:hover {
+  background-color: var(--biru-cerah);
+  box-shadow: 10px 10px 10px #00000020;
+}
+
+.form-input-regis .modal-body a {
+  color: var(--hitam);
+}
+
+.form-input-regis .modal-body a:hover {
+  text-shadow: 2px 2px var(--biru-cerah);
+  transition: all ease 0.3s;
+}

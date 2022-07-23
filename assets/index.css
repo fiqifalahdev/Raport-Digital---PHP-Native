@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --biru-cerah: #9de9f4;
+  --putih: #fff;
+  --hitam: #000000;
+  --abu-abu: #f0efef;
+  --abu-keputihan: rgb(240, 238, 238);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+section {
+  padding-top: 2rem;
+}
+
+/* navigasi */
+nav {
+  background-color: #5dc7da;
+}
+
+nav .container-fluid .collapse .link a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+.buttonLogin:hover {
+  background-color: var(--biru-cerah);
+  color: #fff;
+}
+
+/* main content */
+.main {
+  width: 100%;
+  background-image: url(img/bg1.png);
+  background-size: cover;
+}
+
+.main .desc .judul,
+.penj {
+  color: #fff;
+}
+/* About */
+
+.card {
+  border-radius: 25px;
+}
+
+.card1 .tanda.prestasi1 {
+  background-color: rgb(168, 204, 236);
+}
+.card1 .tanda.akre {
+  background-color: rgb(94, 223, 223);
+}
+.card1 .tanda.eskul {
+  background-color: rgb(129, 219, 219);
+}
+
+.card1 .tanda img {
+  border-radius: 25px;
+}
+
+.overlay-img {
+  height: 15rem;
+}
+
+.overlay-img img {
+  width: 15rem;
+}
+/* Tanggal */
+#Tanggal {
+  background-color: #9de9f4;
+}
+
+.konten {
+  color: rgb(17, 53, 53);
+}
+
+footer {
+  background-color: #fff;
+}
+
+.footer-start .us,
+.contact,
+.stat {
+  color: rgb(39, 104, 109);
+}
+
+.footer-end {
+  /* height: 30px; */
+  background-color: #5dc7da;
+  color: #fff;
+}
+/* Responsive Breakpoint */
+
+@media (max-width: 576px) {
+  /* Awal main content */
+  .main {
+    background-image: url(img/bg3.png);
+    background-size: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .main .desc {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+  }
+}
+
+/* akhir responsive breakpoint */

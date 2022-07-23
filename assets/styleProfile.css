@@ -1,0 +1,35 @@
+/* All Elements */
+:root {
+  --biru-cerah: #9de9f4;
+  --putih: #fff;
+  --hitam: #00000020;
+  --abu-abu: #f0efef;
+  --abu-keputihan: rgb(240, 238, 238);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--abu-abu);
+}
+
+/* End Of All Elements */
+
+/* start of content */
+.wrapProfile {
+  width: 49em;
+  border-radius: 15px;
+  background-color: var(--putih);
+  box-shadow: 15px 15px 15px var(--hitam);
+}
+
+.wrapProfile .userImage img {
+  box-shadow: 10px 5px 10px var(--hitam);
+}

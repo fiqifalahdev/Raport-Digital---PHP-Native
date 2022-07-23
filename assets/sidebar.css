@@ -1,0 +1,114 @@
+/* Start of collapsable sidebar */
+nav {
+  height: 100%;
+  width: 78px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 6px 14px;
+  background-color: var(--biru-cerah);
+  box-shadow: inset 10px 10px 10px var(--hitam), inset -2px -2px 2px var(--putih);
+  /* overflow: hidden; */
+  transition: all 0.5s ease;
+}
+
+nav #wrapAll .dashboardText {
+  width: 98%;
+  height: 25px;
+  min-width: 180px;
+  text-align: center;
+}
+
+nav #wrapAll .dashboardText:hover {
+  border: 2px solid var(--putih);
+  border-radius: 12px;
+}
+
+nav #wrapAll .dashboardText a {
+  text-decoration: none;
+  color: var(--putih);
+}
+
+nav .profile .image_profile {
+  /* display: flex;
+  justify-content: center; */
+  padding: 20px 10px;
+  min-width: 180px;
+  background-color: var(--putih);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+nav .profile .image_profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+nav .button .navbar-brand {
+  opacity: 0;
+  pointer-events: none;
+}
+
+nav .button {
+  text-align: center;
+}
+nav .button1 {
+  width: 3em;
+  height: 2em;
+  background-color: var(--biru-cerah);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+nav .button1:hover {
+  width: 3em;
+  height: 2em;
+  border: 2px solid var(--putih);
+  transform: scale(1.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav #icon {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2em;
+}
+nav a .profile {
+  color: black;
+  transition: transform 0.5s ease;
+}
+
+nav a .profile:hover {
+  transform: scale(1.05);
+}
+/* nav active */
+nav.active .button {
+  display: flex;
+  justify-content: space-between;
+}
+nav.active {
+  width: 280px;
+  overflow: auto;
+}
+nav.active .button .navbar-brand {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.startingContent {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  transition: all ease 0.5s;
+  overflow: auto;
+}
+
+nav.active ~ .startingContent {
+  width: calc(100% - 280px);
+  left: 280px;
+}
